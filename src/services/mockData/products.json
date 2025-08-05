@@ -1,0 +1,110 @@
+[
+  {
+    "Id": 1,
+    "name": "Wireless Bluetooth Headphones",
+    "price": 89.99,
+    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop&crop=center",
+    "description": "Premium wireless headphones with noise cancellation and 30-hour battery life. Perfect for music lovers and professionals who demand high-quality audio.",
+    "category": "Electronics",
+    "inStock": true
+  },
+  {
+    "Id": 2,
+    "name": "Organic Cotton T-Shirt",
+    "price": 24.99,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&crop=center",
+    "description": "Comfortable and sustainable organic cotton t-shirt available in multiple colors. Made from 100% certified organic cotton for ultimate comfort.",
+    "category": "Fashion",
+    "inStock": true
+  },
+  {
+    "Id": 3,
+    "name": "Smart Fitness Watch",
+    "price": 199.99,
+    "image": "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=400&fit=crop&crop=center",
+    "description": "Advanced fitness tracking with heart rate monitoring, GPS, and 7-day battery life. Track your workouts and health metrics with precision.",
+    "category": "Electronics",
+    "inStock": true
+  },
+  {
+    "Id": 4,
+    "name": "Artisan Coffee Beans",
+    "price": 16.99,
+    "image": "https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=400&h=400&fit=crop&crop=center",
+    "description": "Single-origin coffee beans roasted to perfection. Rich, complex flavor profile with notes of chocolate and caramel. Perfect for your morning brew.",
+    "category": "Food & Drink",
+    "inStock": true
+  },
+  {
+    "Id": 5,
+    "name": "Minimalist Desk Lamp",
+    "price": 45.99,
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=center",
+    "description": "Modern LED desk lamp with adjustable brightness and USB charging port. Perfect for your home office or study space.",
+    "category": "Home & Office",
+    "inStock": false
+  },
+  {
+    "Id": 6,
+    "name": "Leather Wallet",
+    "price": 34.99,
+    "image": "https://images.unsplash.com/photo-1627123424574-724758594e93?w=400&h=400&fit=crop&crop=center",
+    "description": "Handcrafted genuine leather wallet with RFID blocking technology. Slim design with multiple card slots and cash compartment.",
+    "category": "Accessories",
+    "inStock": true
+  },
+  {
+    "Id": 7,
+    "name": "Yoga Mat Premium",
+    "price": 39.99,
+    "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=400&h=400&fit=crop&crop=center",
+    "description": "Non-slip premium yoga mat made from eco-friendly materials. Extra thick for superior comfort and joint protection during workouts.",
+    "category": "Sports & Fitness",
+    "inStock": true
+  },
+  {
+    "Id": 8,
+    "name": "Ceramic Coffee Mug",
+    "price": 12.99,
+    "image": "https://images.unsplash.com/photo-1514228742587-6b1558fcf93a?w=400&h=400&fit=crop&crop=center",
+    "description": "Handmade ceramic coffee mug with unique glaze finish. Perfect size for your morning coffee or afternoon tea. Dishwasher and microwave safe.",
+    "category": "Home & Kitchen",
+    "inStock": true
+  },
+  {
+    "Id": 9,
+    "name": "Wireless Phone Charger",
+    "price": 29.99,
+    "image": "https://images.unsplash.com/photo-1609091839311-d1b7a5b88c7a?w=400&h=400&fit=crop&crop=center",
+    "description": "Fast wireless charging pad compatible with all Qi-enabled devices. Sleek design with LED indicator and built-in safety features.",
+    "category": "Electronics",
+    "inStock": true
+  },
+  {
+    "Id": 10,
+    "name": "Indoor Plant Pot Set",
+    "price": 22.99,
+    "image": "https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=400&h=400&fit=crop&crop=center",
+    "description": "Set of 3 modern ceramic plant pots with drainage holes and saucers. Perfect for succulents, herbs, or small houseplants.",
+    "category": "Home & Garden",
+    "inStock": true
+  },
+  {
+    "Id": 11,
+    "name": "Bluetooth Speaker",
+    "price": 59.99,
+    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&h=400&fit=crop&crop=center",
+    "description": "Portable Bluetooth speaker with 360-degree sound and waterproof design. Perfect for outdoor adventures and pool parties.",
+    "category": "Electronics",
+    "inStock": true
+  },
+  {
+    "Id": 12,
+    "name": "Running Shoes",
+    "price": 79.99,
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop&crop=center",
+    "description": "Lightweight running shoes with advanced cushioning and breathable mesh upper. Designed for comfort and performance on any terrain.",
+    "category": "Sports & Fitness",
+    "inStock": true
+  }
+]
