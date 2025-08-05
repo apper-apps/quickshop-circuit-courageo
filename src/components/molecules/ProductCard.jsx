@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import ApperIcon from "@/components/ApperIcon";
+import Loading from "@/components/ui/Loading";
 import { useCart } from "@/hooks/useCart";
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
   const { isInCart } = useCart();
+  const [imageLoading, setImageLoading] = useState(true);
+  const [imageError, setImageError] = useState(false);
 
   const handleCardClick = () => {
     navigate(`/product/${product.Id}`);
+  };
+
+  const handleImageLoad = () => {
+    setImageLoading(false);
+    setImageError(false);
+  };
+
+  const handleImageError = () => {
+    setImageLoading(false);
+    setImageError(true);
   };
 
   const inCart = isInCart(product.Id);
@@ -18,13 +31,33 @@ const ProductCard = ({ product }) => {
       className="card card-hover cursor-pointer overflow-hidden group"
       onClick={handleCardClick}
     >
-      <div className="aspect-square overflow-hidden bg-gray-100">
-        <img
-          src={product.image}
-          alt={product.name}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-          loading="lazy"
-        />
+      <div className="aspect-square overflow-hidden bg-gray-100 relative">
+        {imageLoading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-100">
+            <div className="animate-pulse flex flex-col items-center space-y-2">
+              <div className="w-8 h-8 bg-gray-300 rounded"></div>
+              <div className="text-xs text-gray-500">Loading...</div>
+            </div>
+          </div>
+        )}
+        
+        {imageError ? (
+          <div className="w-full h-full flex flex-col items-center justify-center bg-gray-50 text-gray-400">
+            <ApperIcon name="ImageOff" className="w-12 h-12 mb-2" />
+            <span className="text-sm font-medium">Image unavailable</span>
+          </div>
+        ) : (
+          <img
+            src={product.image}
+            alt={product.name}
+            className={`w-full h-full object-cover group-hover:scale-105 transition-transform duration-300 ${
+              imageLoading ? 'opacity-0' : 'opacity-100'
+            }`}
+            loading="lazy"
+            onLoad={handleImageLoad}
+            onError={handleImageError}
+          />
+        )}
       </div>
       
       <div className="p-4">
